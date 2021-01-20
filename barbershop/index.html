@@ -175,7 +175,7 @@
 					</div>
 					<div class="footer-flex__item item-foot margin-footer">
 						<div class="item-foot__address">давайте дружить!</div>
-						<a href="#"><picture><source srcset="./img/header/vk.webp" type="image/webp"><img src="./img/header/vk.png" alt="vk" class="item-foot__vk"></picture></a>
+						<a href="#"><picture><source srcset="./img/header/vk.webp" type="image/webp"><img src="./img/header/vk.png" alt="vk" class="item-foot__vk" id="item-foot__vk"></picture></a>
 						<a href="#"><picture><source srcset="./img/header/facebook.webp" type="image/webp"><img src="./img/header/facebook.png" alt="facebook" class="item-foot__facebook"></picture></a>
 						<a href="#"><picture><source srcset="./img/header/instagram.webp" type="image/webp"><img src="./img/header/instagram.png" alt="instagram" class="item-foot__instagram"></picture></a>
 					</div>
@@ -187,6 +187,13 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://vk.com/js/api/openapi.js?168" type="text/javascript"></script>
+	<script type="text/javascript">
+	  VK.init({
+	    apiId: ВАШ_API_ID
+	  });
+	VK.Widgets.Auth('item-foot__vk', {});
+	</script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
