@@ -431,6 +431,7 @@ body.overflow {
   -webkit-transition-duration: .3s;
        -o-transition-duration: .3s;
           transition-duration: .3s;
+  text-align: center;
 }
 
 .item-photo__button1:hover {
